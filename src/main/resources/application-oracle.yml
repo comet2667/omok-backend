@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521/xe
+    username: omoktest
+    password: omok
+    driver-class-name: oracle.jdbc.driver.OracleDriver
