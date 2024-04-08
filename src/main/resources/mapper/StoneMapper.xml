@@ -5,7 +5,11 @@
 <mapper namespace="com.omok.backend.domain.user.mapper.StoneMapper">
 
     <insert id="insertStone">
-        insert into play values(seq_playid.nextval, #{x}, #{y})
+        insert into play values(seq_playid.nextval, #{stoneX}, #{stoneY}, #{stoneColor})
     </insert>
+    
+    <select id="selectGround" resultType="com.omok.backend.domain.user.model.StoneRequest">
+        select * from play
+    </select>
 
 </mapper>

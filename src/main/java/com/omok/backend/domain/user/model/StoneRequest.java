@@ -4,6 +4,7 @@ import lombok.Data;
 
 @Data
 public class StoneRequest {
-    private String x;
-    private String y;
+    private String stoneX;
+    private String stoneY;
+    private String stoneColor;
 }

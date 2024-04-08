@@ -26,7 +26,7 @@ public class StoneController {
         CommonResponse response = new CommonResponse();
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(new MediaType("application", "json", Charset.forName("UTF-8")));
-        System.out.println(stoneRequest.getX());
+
         int result = 0;
         try {
             result = stoneService.insertStone(stoneRequest);
